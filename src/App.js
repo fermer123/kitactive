@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import account from './redux/account';
+import authorization from './redux/authorization';
+import registration from './redux/registration';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Route path='/account/' render={() => <account />} />
+        <Route path='/authorization/' render={() => <authorization />} />
+        <Route path='/account/' render={() => <registration />} />
+      </div>
+    </BrowserRouter>
   );
 }
 
