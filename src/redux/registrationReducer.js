@@ -1,19 +1,24 @@
+const SET_USER_DATA = 'SET_USER_DATA';
+
 let initialState = {
-  UserId: null,
-  email: 'null',
-  login: 'null',
+  userId: null,
+  email: null,
+  login: null,
   isAuth: false,
-  isFetching: false,
 };
 
 const registrationReducer = (state, action) => {
   switch (action.type) {
-    case 'asd': {
+    case setUser: {
       return {
         ...state,
       };
     }
   }
 };
+
+const setUser = () => ({
+  type: SET_USER_DATA,
+});
 
 export default registrationReducer;
