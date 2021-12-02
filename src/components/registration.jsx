@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import validator from 'validator';
+
 const registration = (props) => {
   return (
     <div>

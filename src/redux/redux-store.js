@@ -1,12 +1,12 @@
 const { createStore } = require('redux');
-import authorization from './authorization';
-import account from './account';
-import registration from './registration';
+import authorizationReducer from './authorizationReducer';
+import accountReducer from './accountReducer';
+import registrationReducer from './registrationReducer';
 
 let reducers = combineReducers({
-  account: account,
-  authorization: authorization,
-  registration: registration,
+  authorizationReducer,
+  accountReducer,
+  registrationReducer,
 });
 
 let store = createStore(reducers);
