@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const registration = (props) => {
+const Registration = (props) => {
   return (
     <div>
       <h1>registration</h1>
@@ -8,4 +8,4 @@ const registration = (props) => {
   );
 };
 
-export default registration;
+export default Registration;

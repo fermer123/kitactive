@@ -1,4 +1,4 @@
-const account = (props) => {
+const Account = (props) => {
   return (
     <div>
       <h1>account</h1>
@@ -6,4 +6,4 @@ const account = (props) => {
   );
 };
 
-export default account;
+export default Account;

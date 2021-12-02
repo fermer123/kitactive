@@ -1,16 +1,16 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import registration from './components/registration';
+import Account from './components/account';
+import Authorization from './components/authorization';
+import Registration from './components/registration';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='App'>
-        <Route path='/account/' render={() => <account />} />
-        <Route path='/authorization/' render={() => <authorization />} />
-        <Route path='/registration/' render={() => <registration />} />
-      </div>
-    </BrowserRouter>
+    <Routes>
+      <Route path='/account/' element={<Account />} />
+      <Route path='/authorization/' element={<Authorization />} />
+      <Route path='/registration/' element={<Registration />} />
+    </Routes>
   );
 }
 

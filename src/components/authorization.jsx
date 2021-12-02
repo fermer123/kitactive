@@ -1,4 +1,4 @@
-const authorization = (props) => {
+const Authorization = (props) => {
   return (
     <div>
       <h1>authorization</h1>
@@ -6,4 +6,4 @@ const authorization = (props) => {
   );
 };
 
-export default authorization;
+export default Authorization;
