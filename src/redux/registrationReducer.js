@@ -14,6 +14,8 @@ const registrationReducer = (state, action) => {
         ...state,
       };
     }
+    default:
+      return state;
   }
 };
 

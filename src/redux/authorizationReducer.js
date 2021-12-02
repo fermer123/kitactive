@@ -5,6 +5,8 @@ const authorizationReducer = (state, action) => {
         ...state,
       };
     }
+    default:
+      return state;
   }
 };
 

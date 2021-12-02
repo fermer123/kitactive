@@ -5,6 +5,8 @@ const accountReducer = (state, action) => {
         ...state,
       };
     }
+    default:
+      return state;
   }
 };
 
