@@ -7,7 +7,7 @@ let initialState = {
   isAuth: false,
 };
 
-const registrationReducer = (state, action) => {
+const registrationReducer = (state = initialState, action) => {
   switch (action.type) {
     case setUser: {
       return {
