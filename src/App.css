@@ -1,0 +1,16 @@
+.app {
+  display: grid;
+  grid-template-areas:
+    'navbar header header '
+    'navbar content content'
+    'navbar footer footer ';
+  grid-template-rows: 50px 10fr 30px;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 5px; /* отступ */
+  width: 1000px;
+  margin: 0 auto;
+}
+.app-content {
+  grid-area: content;
+  background-color: grey;
+}
