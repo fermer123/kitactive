@@ -14,3 +14,7 @@
   grid-area: content;
   background-color: grey;
 }
+.footer {
+  background-color: grey;
+  text-align: left;
+}

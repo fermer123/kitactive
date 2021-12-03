@@ -18,7 +18,7 @@ function App() {
           <Route path='/registration/' element={<Registration />} />
         </Routes>
       </div>
-      <footer />
+      <div className={'footer'}>© 2021 Smolin I.S.</div>
     </div>
   );
 }

@@ -12,6 +12,8 @@ const registrationReducer = (state = initialState, action) => {
     case setUser: {
       return {
         ...state,
+        ...action.data,
+        isAuth: true,
       };
     }
     default:
