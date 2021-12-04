@@ -4,7 +4,7 @@ import Account from './components/account';
 import Authorization from './components/authorization';
 import Header from './components/header/header';
 import Navbar from './components/navbar/navbar';
-import Registration from './components/registration';
+import Registration from './components/registration/registration';
 
 function App() {
   return (
