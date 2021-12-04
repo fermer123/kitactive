@@ -15,7 +15,7 @@ const Registration = (props) => {
       <h1>Registration</h1>
       <div>
         <input
-          placeholder={'name'}
+          placeholder={'Name'}
           setValue={setName}
           onChange={(e) => setName(e.target.value)}
         />
@@ -42,7 +42,7 @@ const Registration = (props) => {
         <Button
           variant='contained'
           size='small'
-          onclick={() => registration(email, password)}
+          onclick={() => registration(email, password, name)}
         >
           Login
         </Button>

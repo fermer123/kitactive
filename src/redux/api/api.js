@@ -16,7 +16,8 @@ export const registration = async (email, password, name) => {
         name,
       },
     );
+    alert(response.data);
   } catch (e) {
-    console.log(response.data);
+    alert(e);
   }
 };
