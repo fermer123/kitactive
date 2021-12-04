@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Account = (props) => {
   return (
     <div>
-      <h1>account</h1>
+      <h1>Account</h1>
     </div>
   );
 };

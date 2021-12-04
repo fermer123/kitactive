@@ -5,6 +5,7 @@ let initialState = {
   email: null,
   login: null,
   isAuth: false,
+  name: null,
 };
 
 const registrationReducer = (state = initialState, action) => {
