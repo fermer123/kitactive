@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Account from './components/account';
@@ -7,6 +8,7 @@ import Navbar from './components/navbar/navbar';
 import Registration from './components/registration/registration';
 
 function App() {
+  const isAuth = useSelector((state) => state.user.isAuth);
   return (
     <div className='app'>
       <Header />

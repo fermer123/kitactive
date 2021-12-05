@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { setUser } from '../authorizationReducer';
 
 // const instance = axios.create({
 //   withCredentials: true, //Авторизация
@@ -22,14 +23,21 @@ export const registration = async (email, password, name) => {
   }
 };
 
-export const login = async (email, password) => {
-  try {
-    let response = await axios.get(`https://test.kitactive.ru:8089/api/login`, {
-      email,
-      password,
-    });
-    console.log(response.data);
-  } catch (e) {
-    console.log(e);
-  }
+export const login = (email, password) => {
+  return async (dispatch) => {
+    try {
+      const response = await axios.post(
+        `https://test.kitactive.ru:8089/api/login`,
+        {
+          email,
+          password,
+        },
+      );
+      dispatch(setUser(response.data.user));
+      localStorage.setItem('token', response.data.token);
+      console.log(response.data);
+    } catch (e) {
+      console.log(e.response.data);
+    }
+  };
 };
