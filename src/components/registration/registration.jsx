@@ -16,21 +16,21 @@ const Registration = (props) => {
       <div>
         <input
           placeholder={'Name'}
-          setValue={setName}
+          value={name}
           onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div>
         <input
           placeholder={'login'}
-          setValue={setEmail}
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div>
         <input
           placeholder={'Password'}
-          setValue={setPassword}
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
@@ -42,7 +42,7 @@ const Registration = (props) => {
         <Button
           variant='contained'
           size='small'
-          onclick={() => registration(email, password, name)}
+          onClick={() => registration(email, password, name)}
         >
           Login
         </Button>

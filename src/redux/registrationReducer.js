@@ -8,7 +8,7 @@ let initialState = {
   name: null,
 };
 
-const registrationReducer = (state = initialState, action) => {
+const registrationReducer = (state, action) => {
   switch (action.type) {
     case setUser: {
       return {
