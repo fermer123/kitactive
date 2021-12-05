@@ -34,10 +34,10 @@ const Registration = (props) => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-
+      {/* 
       <div>
         <Checkbox defaultChecked /> remember me
-      </div>
+      </div> */}
       <div>
         <Button
           variant='contained'
